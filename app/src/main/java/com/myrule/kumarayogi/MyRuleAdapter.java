@@ -16,7 +16,7 @@ import android.widget.TextView;
 import com.myrule.kumarayogi.pdf.R;
 
 /**
- * Created by girish on 24/2/17.
+ * Created by praveen on 24/2/17.
  */
 public interface MyRuleAdapter {
 
@@ -54,9 +54,9 @@ public interface MyRuleAdapter {
 
 
         Context context;
-        int[] imageId = {R.drawable.image1,R.drawable.launcher,R.drawable.image3,R.drawable.image4,R.drawable.image5};
+        int[] imageId = {R.drawable.image1, R.drawable.launcher, R.drawable.image3, R.drawable.image4, R.drawable.image5};
 
-        public CustomSlideAdapter(Context context){
+        public CustomSlideAdapter(Context context) {
             this.context = context;
 
         }
@@ -66,18 +66,17 @@ public interface MyRuleAdapter {
         public Object instantiateItem(ViewGroup container, int position) {
             // TODO Auto-generated method stub
 
-            LayoutInflater inflater = ((Activity)context).getLayoutInflater();
+            LayoutInflater inflater = ((Activity) context).getLayoutInflater();
 
             View viewItem = inflater.inflate(R.layout.image_slide, container, false);
             ImageView imageView = (ImageView) viewItem.findViewById(R.id.imageView);
             imageView.setImageResource(imageId[position]);
             //TextView textView1 = (TextView) viewItem.findViewById(R.id.textView1);
             //textView1.setText("hi");
-            ((ViewPager)container).addView(viewItem);
+            ((ViewPager) container).addView(viewItem);
 
             return viewItem;
         }
-
 
 
         @Override
@@ -87,10 +86,11 @@ public interface MyRuleAdapter {
 
         @Override
         public boolean isViewFromObject(View view, Object object) {
-            return (view==(View) object);
+            return (view == (View) object);
         }
-        public void destroyItem(ViewGroup container, int position, Object object){
-            container.removeView((LinearLayout)object);
+
+        public void destroyItem(ViewGroup container, int position, Object object) {
+            container.removeView((LinearLayout) object);
         }
     }
 

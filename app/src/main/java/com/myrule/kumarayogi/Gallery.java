@@ -21,7 +21,7 @@ public class Gallery extends AppCompatActivity {
     public Integer[] mThumbIds = {R.drawable.gallery01,R.drawable.gallery02,R.drawable.gallery03,R.drawable.gallery04,R.drawable.gallery05,
             R.drawable.gallery06,R.drawable.gallery07,R.drawable.gallery08,R.drawable.gallery09,R.drawable.gallery11,
             R.drawable.gallery12,R.drawable.gallery13,R.drawable.gallery14,R.drawable.gallery15,R.drawable.gallery16,R.drawable.gallery17,
-            R.drawable.gallery18};
+            R.drawable.gallery18,R.drawable.gallery19,R.drawable.gallery20,R.drawable.gallery21,R.drawable.gallery22};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

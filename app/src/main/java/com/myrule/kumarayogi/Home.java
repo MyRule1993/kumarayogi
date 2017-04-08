@@ -21,13 +21,15 @@ public class Home extends AppCompatActivity implements MyRuleAdapter {
 
     private ListView listView;
     private String names[] = {
-            "Karanika Kumarayogi",
+            "Life of Karanika Kumarayogi",
             "Gallery",
-            "Quotes",
+            "Verses on Kumarayogi",
+            "Kumareshwara vani",
             "Download PDF",
     };
 
     private String desc[] = {
+            "",
             "",
             "",
             "",
@@ -83,10 +85,15 @@ public class Home extends AppCompatActivity implements MyRuleAdapter {
                         intent=new Intent(getApplicationContext(),Gallery.class);
                         startActivity(intent);break;
                     case 2:
-                        Toast.makeText(getApplicationContext(),"Coming soon",Toast.LENGTH_SHORT).show();
+                        intent=new Intent(getApplicationContext(),Verse.class);
+                        startActivity(intent);
                         break;
-                    case 3:
-                        Toast.makeText(getApplicationContext(),"Coming soon",Toast.LENGTH_SHORT).show();
+                    case 3:  intent=new Intent(getApplicationContext(),Vani.class);
+                        startActivity(intent);
+                        break;
+                    case 4:
+                        intent=new Intent(getApplicationContext(),PdfDownload.class);
+                        startActivity(intent);
                         break;
                 }
 

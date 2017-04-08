@@ -24,6 +24,9 @@
         <activity android:name="com.myrule.kumarayogi.Reader"/>
         <activity android:name="com.myrule.kumarayogi.Gallery"/>
         <activity android:name="com.myrule.kumarayogi.SingleImage"/>
+        <activity android:name="com.myrule.kumarayogi.PdfDownload"/>
+        <activity android:name="com.myrule.kumarayogi.Verse"/>
+        <activity android:name="com.myrule.kumarayogi.Vani"/>
     </application>
 
 </manifest>
